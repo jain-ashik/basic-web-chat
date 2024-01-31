@@ -1,0 +1,21 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "this is the basic web chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auto-start": "nodemon index.js",
+    "run": "node index.js",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "18.17.1"
+  },
+  "author": "jain@ashik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}
