@@ -1,10 +1,24 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat App</title>
+    <meta charset="utf-8" />
+    <title>web chat app</title>
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
-    <h1>this is the basic chat app</h1>
+    <h1>this is the simple web chat app!!!</h1>
+    <h4>socket.io is working!!!</h4>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+      let socket = io();
+      console.log(socket);
+      socket.on("connect", () => {
+        console.log("you have connected to the server!!");
+      });
+      socket.on("disconnect", () => {
+        console.log(" Server connection has lost!!");
+      });
+    </script>
   </body>
 </html>
