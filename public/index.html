@@ -4,16 +4,26 @@
     <meta charset="utf-8" />
     <title>web chat app</title>
     <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./css/first.css" />
   </head>
   <body>
-    <h1>simple web chat</h1>
-    <form action="#" method="post">
-      <input type="text" name="message" id="userMessage" />
-      <input type="submit" value="send message" id="submit-btn" />
-    </form>
+    <nav id="nav-bar">
+      <h1>simple web chat</h1>
+    </nav>
+    <div id="main-content">
+      <div id="users-display">
+        <h1>users name</h1>
+      </div>
+      <div id="message-display"></div>
+      <div id="create-message">
+        <form action="#" method="post">
+          <input type="text" name="message" id="userMessage" />
+          <input type="submit" value="send message" id="submit-btn" />
+        </form>
 
-    <input type="submit" value="send location" id="location-btn" />
-
+        <input type="submit" value="send location" id="location-btn" />
+      </div>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="javascript/first.js"></script>
   </body>

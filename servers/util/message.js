@@ -1,7 +1,18 @@
+const seconds = new Date().getSeconds();
+const hours = new Date().getHours();
+const minutes = new Date().getMinutes();
+const hours12format = hours > 12 ? 12 - (24 - hours) : hours;
+const mode = hours < 12 ? "am" : "pm";
+const currentTime = `${hours}:${minutes}:${new Date().getSeconds()} ${mode} `;
+// setInterval(
+//   () => console.log(`${hours}:${minutes}:${new Date().getSeconds()} ${mode} `),
+//   1000
+// );
+
 const message = (id, from, text) => {
-  return { id, from, text, time: new Date().getHours() };
+  return { id, from, text, time: currentTime };
 };
-//https://google.com/maps/?lat=13.04196712931217&long=77.55256438301184
+//https://google.com/maps/?lat=13.04196712931217&long=77.55256438301184 --geo location url
 
 const geoLocationURL = (lat, long) => {
   return {
@@ -9,4 +20,6 @@ const geoLocationURL = (lat, long) => {
     geoUrl: `https://google.com/maps/?lat=${lat}&long=${long}`,
   };
 };
-module.exports = { message,geoLocationURL };
+
+console.log(message(1, "admin", "good morning"));
+module.exports = { message, geoLocationURL };

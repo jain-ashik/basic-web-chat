@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #c38df5;
+}
+#nav-bar {
+  height: 50px;
+  width: auto;
+  background-color: #6d95df;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+#users-display {
+  float: left;
+  width: 450px;
+  height: 655px;
+  background-color: #bb8ae6;
+  border-radius: 25px;
+}
+#message-display {
+  float: left;
+  width: 1075px;
+  height: 580px;
+  background-color: #c38df5;
+  border-radius: 25px;
+}
+#create-message {
+  width: 1075px;
+  float: left;
+  height: 75px;
+  background-color: #c8dca3;
+  border-radius: 10px;
+  display: inline;
+}
+#userMessage {
+  width: 800px;
+  height: 55px;
+  font-size: xx-large;
+}
+#submit-btn {
+  height: 40px;
+}
+#location-btn {
+  height: 20px;
+}
